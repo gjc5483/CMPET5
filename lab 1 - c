@@ -1,0 +1,17 @@
+
+//This program is to calculate area of a circle having its radius
+// Including a library file that contains all the declarations of std functions for input & output 
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int radius = 5;
+    double area;
+    double pi = 3.141592;
+    area = pow(radius, 2) * pi;
+    
+    printf("area= %f", area);
+
+    return 0;
+}
