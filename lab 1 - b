@@ -5,12 +5,16 @@
 
 int main()
 {
+//start of program
     float side, area;
     
     printf("\n enter the side length \n");
     scanf(" %f", &side);
+    //alculation of the area using the mathematical formula
     area = pow(side, 2);
+    //display the area
     printf("The area of the square= %f", area);
 
     return 0;
+    //End the main program
 }
