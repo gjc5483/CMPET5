@@ -1,0 +1,15 @@
+//This program is to calculate area of a square having its side
+// Including a library file that contains all the declarations of std functions for input & output 
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int side = 5;
+    int area;
+    area = pow(side, 2);
+    
+    printf("area= %d", area);
+
+    return 0;
+}
