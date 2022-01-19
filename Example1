@@ -1,0 +1,41 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int x;
+    float y;
+    double j;
+    long b;
+    char k;
+    
+    printf("\n Enter integer value\n");
+    scanf(" %d", &x);
+    
+    printf("\n Enter float value\n");
+    scanf(" %f", &y);
+    
+    printf("\n Enter double value\n");
+    scanf(" %lf", &j);
+    
+    printf("\n Enter long value\n");
+    scanf(" %ld", &b);
+    
+    printf("\n Enter char value\n");
+    scanf(" %c", &k);
+    
+    printf("\n Integer value=%d\n", x);
+    printf("\n Float value=%f\n", y);
+    printf("\n Double value=%lf\n", j);
+    printf("\n Long value=%ld\n", b);
+    printf("\n Character value=%c\n", k);
+
+    return 0;
+}
