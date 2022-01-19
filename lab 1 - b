@@ -5,11 +5,12 @@
 
 int main()
 {
-    int side = 5;
-    int area;
-    area = pow(side, 2);
+    float side, area;
     
-    printf("area= %d", area);
+    printf("\n enter the side length \n");
+    scanf(" %f", &side);
+    area = pow(side, 2);
+    printf("The area of the square= %f", area);
 
     return 0;
 }
