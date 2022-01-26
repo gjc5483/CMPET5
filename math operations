@@ -1,0 +1,17 @@
+int val1, val2;
+    int product = 0;
+    float quotient = 0;
+    float moduleRemainder = 0;
+    
+    printf("Please enter an int value:\n");
+    scanf(" %d", &val1);
+    printf("Please enter an int value:\n");
+    scanf(" %d", &val2);
+    product = val1 * val2;
+    quotient = val1/val2;
+    moduleRemainder = val1 % val2;
+
+    printf("Product is equal to %d\n", product);
+    printf("Quotient  is equal to %f\n", quotient);
+    printf("Remainder  is equal to %f\n", moduleRemainder);
+    return 0;
