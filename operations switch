@@ -1,0 +1,27 @@
+#include <stdio.h>
+void main(){
+    int num1, num2;
+    char operation;
+    printf("Enter Number 1\n");
+    scanf(" %d",&num1);
+    printf("Enter Number 2\n");
+    scanf(" %d",&num2);
+    printf("Enter Operator to perform on values\n");
+    scanf(" %c",&operation);
+    switch(operation) {
+        case '+':
+            printf("Sum is %d", num1+num2);
+        break;
+        case '-':
+            printf("Difference is %d", num1-num2);
+        break;
+        case '*':
+            printf("Product is %d", num1*num2);
+        break;
+        case '/':
+            printf("Quotient is %d", num1/num2);
+        break;
+        
+        default: printf("\nOperation invalid");
+    }
+}
