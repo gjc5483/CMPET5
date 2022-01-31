@@ -21,6 +21,9 @@ void main(){
         case '/':
             printf("Quotient is %d", num1/num2);
         break;
+        case '%':
+            printf("Module is %d", num1%num2);
+        break;
         
         default: printf("\nOperation invalid");
     }
