@@ -1,0 +1,36 @@
+#include <stdio.h>
+void main(){
+    char coinType;
+    int coinValue;
+    
+    printf("Enter what type of coin you'd like to see its value\n");
+    printf("\nEnter P or p for Penny");
+    printf("\nEnter D or d for Dime");
+    printf("\nEnter N or n for Nickel");
+    printf("\nEnter Q or q for Quarter\n");
+    scanf(" %c",&coinType);
+    switch(coinType) {
+        case 'p':
+        case 'P':
+            coinValue = 1;
+            printf("Penny value is %d cent", coinValue);
+        break;
+        case 'd':
+        case 'D':
+            coinValue = 10;
+            printf("Dime value is %d cents", coinValue);
+        break;
+        case 'n':
+        case 'N':
+            coinValue = 5;
+            printf("Nickel value is %d cents", coinValue);
+        break;
+        case 'q':
+        case 'Q':
+            coinValue = 25;
+            printf("Quarter value is %d cents", coinValue);
+        break;
+        
+        default: printf("\nChoice is invalid");
+    }
+}
