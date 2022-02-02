@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <math.h>
+void main(){
+    float radius, height, base1, base2;
+    int operation;
+    float pi = 3.141592;
+    float result;
+    
+    printf("Enter the radius:\n");
+    scanf(" %f",&radius);
+    printf("Enter the height:\n");
+    scanf(" %f",&height);
+    printf("Enter base 1:\n");
+    scanf(" %f",&base1);
+    printf("Enter base 2:\n");
+    scanf(" %f",&base2);
+    printf("Enter which the number for which operation you would like to perform:\n");
+    printf("1.Volume of Cylinder\n2. Volume of Sphere\n3. Volume of Cone\n4. Area of trapezium\n");
+    scanf(" %d",&operation);
+    
+    switch(operation) {
+        case 1:
+            result = pow(radius, 2) * pi * height;
+            printf("Volume of the Cylinder is %f", result);
+        break;
+        case 2:
+            result = (4/3) * pi * pow(radius, 3);
+            printf("Volume of the Sphere is %f", result);
+        break;
+        case 3:
+            result = (height / 3) * pow(radius, 2) * pi;
+            printf("Volume of the Cone is %f", result);
+        break;
+        case 4:
+            result = ((base1 + base2)/2)*height;
+            printf("Area of the Trapezoid is %f", result);
+        break;
+        
+        default: printf("\nInvalid option entered\n");
+    }
+}
