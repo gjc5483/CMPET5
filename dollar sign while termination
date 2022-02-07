@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    char input;
+    printf("Please enter values. Program terminates when a dollar sign is entered: ");
+    scanf(" %c", &input);
+    while (input != '$'){
+        printf("Please enter values. Program terminates when a dollar sign is entered: ");
+        scanf(" %c", &input);
+        printf("\nValue entered is: %c\n", input);
+    }
+    return 0;
+}
