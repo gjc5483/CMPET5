@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int sentinel = 0;
+    float value;
+    float sum = 0;
+    float average;
+    while (sentinel <15){
+        printf("Please enter values:");
+        scanf(" %f", &value);
+        sum = sum + value;
+        sentinel++;
+    }
+    average = sum /15.0;
+    printf("sum is %f", sum);
+    printf("\nAverage is %f", average);
+    return 0;
+}
