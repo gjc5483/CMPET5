@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int ascii_val;
+    char input;
+    int ascii_before, ascii_after;
+    printf("\n Enter a character : ");
+    scanf(" %c",&input);
+    ascii_val = input;
+    ascii_before = ascii_val - 1;
+    ascii_after = ascii_val + 1;
+    
+    printf("\n The ASCII value of the character is : %d",ascii_val);
+    printf("\n The ASCII value of the character before %c is : %d", input, ascii_before);
+    printf("\n The ASCII value of the character after %c is : %d", input, ascii_after);
+    
+
+    return 0;
+}
