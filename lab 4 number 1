@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, count = 1;
+    while(count<6){
+        printf("Enter number %d ", count);
+        scanf("%d", &num);
+        if(num%2==0){
+            printf("\nNumber = %d is even", num);
+        }else{
+            printf("\nNumber = %d is odd", num);
+        }
+        count++;
+    }
+
+    return 0;
+}
