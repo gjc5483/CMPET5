@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int number;
+    int val;
+    
+    printf("Please enter value to print backwards: ");
+    scanf("%d", &number);
+    printf("Number backwards is: ");
+    
+    while(number>0){
+        val = number%10;
+        number = number/10;
+        printf("%d", val);
+    }
+    
+    return 0;
+}
