@@ -3,23 +3,30 @@
 int main()
 {
     int number, odd_sum = 0, even_sum = 0;
+    float odd_avg = 0.0, even_avg = 0.0;
+    int even_counter = 0, odd_counter = 0;
     printf("\nPlease enter a number: ");
     scanf("%d", &number);
     
     while(number >0){
         
         if(number%2 == 0){
-            even_sum = even_sum +number;
+            even_sum = even_sum + number;
+            even_counter++;
         }else{
             odd_sum = odd_sum + number;
+            odd_counter++;
         }
+        
         printf("\nPlease enter a number: ");
         scanf("%d", &number);
     }
-    
+    odd_avg = odd_sum/odd_counter;
+    even_avg = even_sum/even_counter;
     printf("Even sum is %d\n", even_sum);
-    printf("Odd sum is %d", odd_sum);
-    
+    printf("Odd sum is %d\n", odd_sum);
+    printf("Even sum is %f\n", even_avg);
+    printf("Odd sum is %f\n", odd_avg);
     
     return 0;
 }
