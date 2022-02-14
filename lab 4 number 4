@@ -2,8 +2,7 @@
 
 int main()
 {
-    int number;
-    int val;
+    int number, val;
     
     printf("Please enter value to print backwards: ");
     scanf("%d", &number);
