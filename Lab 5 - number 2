@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    float hoursWorked, costOfJob, costOfParts, totalCost;
+    int payRate = 25;
+    
+    for(;;){
+        printf("\nEnter Hours Worked: ");
+        scanf("%f", &hoursWorked);
+        if(hoursWorked<0){
+            printf("Terminating program\n");
+            break;
+        }
+        printf("\nEnter the cost of parts: ");
+        scanf("%f", &costOfParts);
+        
+        costOfJob = (payRate * hoursWorked) + costOfParts;
+        
+        totalCost += costOfJob;
+        printf("For this Job:\nHours Worked: %f\nCost of Parts: %f\nCost of Job: %f\n", hoursWorked, costOfParts, costOfJob);
+    }
+    
+    printf("Total Charge for all Jobs: %f", totalCost);
+    return 0;
+}
