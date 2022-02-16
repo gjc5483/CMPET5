@@ -1,26 +1,33 @@
 #include <stdio.h>
-
+#define fixed_charge 25.00
+#define rate 0.20
 int main()
 {
     char customerName[30];
     float previousMeter, currentMeter, unitsUsed, totalCost;
+    int cont = 0;
     
     for(;;){
         printf("\nEnter Customer Number: ");
         scanf("%s", &customerName);
-        
-        if(customerNum<=0){
-            printf("Terminating program\n");
-            break;
-        }
+       
         printf("\nEnter the Previous Meter Reading: ");
         scanf("%f", &previousMeter);
         printf("\nEnter the Current Meter Reading: ");
         scanf("%f", &currentMeter);
         unitsUsed = currentMeter-previousMeter;
-        totalCost = 2 + (unitsUsed*0.2);
+        totalCost = fixed_charge + (unitsUsed*rate);
         
-        printf("\nFor Customer %s:\nPrevious Meter Reading: %f\nCurrent Meter Reading: %f\nUnits Used: %f\nTotal Cost: $%0.2f\n", customerName, previousMeter, currentMeter, unitsUsed, totalCost);
+        if(totalCost <25){
+        cost = fixed_charge;
+        }
+        
+        printf("\nCustomer Name %s:\nPrevious Meter Reading: %f\nCurrent Meter Reading: %f\nUnits Used: %f\nTotal Cost: $%0.2f\n", customerName, previousMeter, currentMeter, unitsUsed, totalCost);
+        printf("\nContinue? Enter a number: ");
+        scanf("%d", &cont);
+        if(cont<0){
+            break;
+        }
     }
     
     return 0;
