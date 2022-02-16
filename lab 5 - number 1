@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    float original_price, new_price, discount;
+    int total_items = 0;
+    
+    for(;;){
+        printf("\nEnter price: ");
+        scanf("%f", &original_price);
+        if(original_price<=0){
+            printf("Terminating program\n");
+            break;
+        }
+        printf("\nEnter the Discount: ");
+        scanf("%f", &discount);
+        
+        new_price = original_price * (1.0-discount);
+        total_items++;
+        printf("For this item:\nOriginal Price: %f\nDiscount Amount: %.2f%\nNew Price: %f\n", original_price, discount, new_price);
+    }
+    
+    printf("Number of Items: %d", total_items);
+    return 0;
+}
