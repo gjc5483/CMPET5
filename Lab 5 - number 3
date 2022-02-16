@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    int customerNum;
+    float previousMeter, currentMeter, unitsUsed, totalCost;
+    
+    for(;;){
+        printf("\nEnter Customer Number: ");
+        scanf("%d", &customerNum);
+        
+        if(customerNum<=0){
+            printf("Terminating program\n");
+            break;
+        }
+        printf("\nEnter the Previous Meter Reading: ");
+        scanf("%f", &previousMeter);
+        printf("\nEnter the Current Meter Reading: ");
+        scanf("%f", &currentMeter);
+        unitsUsed = currentMeter-previousMeter;
+        totalCost = 2 + (unitsUsed*0.2);
+        
+        printf("\nFor Customer %d:\nPrevious Meter Reading: %f\nCurrent Meter Reading: %f\nUnits Used: %f\nTotal Cost: %f\n", customerNum, previousMeter, currentMeter, unitsUsed, totalCost);
+    }
+    
+    return 0;
+}
