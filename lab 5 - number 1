@@ -17,7 +17,7 @@ int main()
         
         new_price = original_price * (1.0-discount);
         total_items++;
-        printf("For this item:\nOriginal Price: %f\nDiscount Amount: %.2f%\nNew Price: %f\n", original_price, discount, new_price);
+        printf("For this item:\nOriginal Price: %f\nDiscount Amount: %.2f\nNew Price: %f\n", original_price, discount, new_price);
     }
     
     printf("Number of Items: %d", total_items);
