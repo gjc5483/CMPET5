@@ -2,19 +2,25 @@
 
 int main()
 {
-    float values[4], max_number =0;
-    int index;
+    float values[4], max_number =0, min_number=1000000000;
+    int indexMax, indexMin;
     
     for(int i=0; i<5; i++){
         printf("Enter value: ");
         scanf("%f", &values[i]);
         if(values[i]>max_number){
             max_number = values[i];
-            index = i;
+            indexMax = i;
         }
+        if(values[i]<min_number){
+            min_number = values[i];
+            indexMin = i;
+        }
+        
     }
     
-    printf("Max Number is %f and its location is %d", max_number, index);
+    printf("Max Number is %f and its location is %d\n", max_number, indexMax);
+    printf("Min Number is %f and its location is %d", min_number, indexMin);
     
     return 0;
 }
