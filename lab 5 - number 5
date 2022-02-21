@@ -23,3 +23,30 @@ int main()
     
     return 0;
 }
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    double x,sum=0.0;
+    long factorial;
+    int count,i;
+
+    printf("\n Enter x\n");
+    scanf("%lf",&x);
+
+    sum=1+x;
+    
+    for(count=2;count<=20;count++)
+    {
+        factorial=1;
+        for(i=1;i<=count;i++)
+            factorial*=i;
+        sum+=(float)pow(x,count)/factorial;
+    }
+
+    printf("\n Sum = %lf\n",sum);
+
+}
