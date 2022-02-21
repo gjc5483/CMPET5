@@ -50,3 +50,28 @@ int main()
     printf("\n Sum = %lf\n",sum);
 
 }
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int userInput;
+    long int sum = 0, factorial;
+    
+    printf("Please enter value for use in calculation: ");
+    scanf("%d", &userInput);
+    
+    for(int counter=1;counter<=20;counter++){
+        for(int i=counter; i>0; i--){
+            factorial = 1;
+            factorial*=i;
+        }
+        sum += pow(userInput, counter)/factorial;
+        //counter++;
+    }
+    
+    printf("Sum of the series is: %ld", sum);
+    
+    return 0;
+}
