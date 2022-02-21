@@ -3,75 +3,21 @@
 
 int main()
 {
-    int userInput;
-    long int sum = 0, factorial = 1;
-    
-    printf("Please enter value for use in calculation: ");
-    scanf("%d", &userInput);
-    
-    for(int counter=1;counter<=20;counter++){
-        for(int i=counter; i>0; i--){
-            
-            factorial = factorial*i;
-            printf("fact%ld", factorial);
-        }
-        sum = sum + (pow(userInput, counter)/factorial);
-        //counter++;
-    }
-    
-    printf("Sum of the series is: %ld", sum);
-    
-    return 0;
-}
-
-
-#include <stdio.h>
-#include <math.h>
-
-int main()
-{
-    double x,sum=0.0;
+    double userInput, sum = 0.0;
     long factorial;
-    int count,i;
-
-    printf("\n Enter x\n");
-    scanf("%lf",&x);
-
-    sum=1+x;
-    
-    for(count=2;count<=20;count++)
-    {
-        factorial=1;
-        for(i=1;i<=count;i++)
-            factorial*=i;
-        sum+=(float)pow(x,count)/factorial;
-    }
-
-    printf("\n Sum = %lf\n",sum);
-
-}
-
-#include <stdio.h>
-#include <math.h>
-
-int main()
-{
-    int userInput;
-    long int sum = 0, factorial;
     
     printf("Please enter value for use in calculation: ");
-    scanf("%d", &userInput);
+    scanf("%lf", &userInput);
     
     for(int counter=1;counter<=20;counter++){
-        for(int i=counter; i>0; i--){
-            factorial = 1;
+        factorial = 1;
+        for(int i=1; i<=counter; i++){
             factorial*=i;
         }
         sum += pow(userInput, counter)/factorial;
-        //counter++;
     }
     
-    printf("Sum of the series is: %ld", sum);
+    printf("Sum of the series is: %lf", sum);
     
     return 0;
 }
