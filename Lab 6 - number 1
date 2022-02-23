@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int array_num[10] = {};
+    int counter, searchVal;
+    
+    printf("Please enter a value to search for in the array: ");
+    scanf("%d", searchVal);
+    
+    for(int i = 0; i<10; i++){
+        if(array_num[i] == searchVal){
+            counter++;
+        }
+    }
+    
+    printf("%d appeared %d times in the array", searchVal, counter);
+}
