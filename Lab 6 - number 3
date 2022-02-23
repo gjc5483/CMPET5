@@ -6,7 +6,7 @@ int main()
     int counter, searchVal;
     
     printf("Please enter a value to search for in the array: ");
-    scanf("%d", searchVal);
+    scanf("%d", &searchVal);
     
     for(int i = 0; i<10; i++){
         if(array_num[i] == searchVal){
