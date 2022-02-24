@@ -10,8 +10,8 @@ Write your code in this editor and press "Run" button to compile and execute it.
 
 int main()
 {
-    int array_num[10] = {};
-    int array_num2[10] = {};
+    int array_num[10];
+    int array_num2[10];
     int array_sum[10];
     int max=0, min;
     
